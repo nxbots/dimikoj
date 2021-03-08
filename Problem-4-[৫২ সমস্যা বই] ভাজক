@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int t;
+    scanf("%d", &t);
+    for(int i=1; i<t+1; i++) {
+        int n;
+        scanf("%d", &n);
+        int x=n/2;
+        printf("Case %d:", i);
+        for(int j=1; j<x+1; j++) {
+            if(n%j==0)
+                printf(" %d", j);
+        }
+        printf(" %d\n", n);
+    }
+    return 0;
+}
+
+/*
+Logic: divisors/factors main number er ordhek er upor hoite parena.
+jemon 100 er divisor sorboccho 50 hote pare.
+100 nijeo tar divisor seta vinno kotha.
+*/
